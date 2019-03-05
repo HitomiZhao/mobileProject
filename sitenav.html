@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商场导航</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <a href="javaScript:history.go(-1);"><i class="fa fa-angle-left"></i></a>
+                <span>商场导航</span>
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- ---------------------------------------nav -->
+        <div class="mmm_nav">
+            <ul class="clearfix">
+
+                <!-- <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li> -->
+
+            </ul>
+        </div>
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="siteTpl">
+        {{each result v i}}
+            <li data-id = "{{v.navId}}">
+                <a href="{{v.navHref}}">
+                    <img src="{{v.navImg}}" alt="">
+                    <span>{{v.navTitle}}</span>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sitenav.js"></script>
+</body>
+
+</html>

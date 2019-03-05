@@ -1,0 +1,287 @@
+@body_bgc : #F1F1F1;
+@bgc : #FF841D;
+@border : #E7E7E7;
+@design : 750;
+@base : 75rem;
+
+.mmm_nav {
+    height: 68 / @base;
+    border-top: 1/@base solid #C2C2C2;
+    border-bottom: 1/@base solid #C2C2C2;
+    padding-left: 15 / @base;
+    font-size: 22 / @base;
+    line-height: 68 / @base;
+    background-image: linear-gradient(#FAFAFA 0%, #F2F2F2 100%);
+}
+
+
+
+.mmm_brandTop {
+    height: 73 / @base;
+    background-color: #EEEEEE;
+    padding-left: 20/@base;
+    line-height: 73 / @base;
+    font-size: 26 / @base;
+    color: #742801;
+    border-top: 1/@base solid #C2C2C2;
+    border-bottom: 1/@base solid #C2C2C2;
+    font-weight: 700;
+}
+
+.categoryList {
+    ul {
+        li {
+            height: 130 / @base;
+            background-color: #FFFFFF;
+            padding: 0;
+
+            a {
+                position: relative;
+                padding-left: 20 / @base;
+                padding-top: 18 / @base;
+                padding-right: 10 / @base;
+
+                .number {
+                    width: 40/@base;
+                    height: 40 / @base;
+                    margin-right: 20 / @base;
+                    line-height: 40 / @base;
+
+                    span {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        font-size: 30 / @base;
+                        text-align: center;
+                        background-color: #C9C9C9;
+
+                        &.red {
+                            background-color: red;
+                        }
+
+                        &.orange {
+                            background-color: orange;
+                        }
+
+                        &.lime {
+                            background-color: #8BDF5C;
+                        }
+                    }
+
+
+
+                    span {
+                        color: #fff;
+
+                    }
+                }
+
+                .txt {
+                    p {
+                        height: 55 / @base;
+                        line-height: 40 / @base;
+                        font-size: 30 / @base;
+
+                        &:nth-child(2) {
+                            color: #9C9A9A;
+                            font-size: 24 / @base;
+                        }
+                    }
+                }
+
+                .icon {
+                    i {
+                        font-size: 60 / @base;
+                        color: #8DA0A0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mmm_sale {
+
+    height: 70 / @base;
+    border-top: 1/@base solid #C2C2C2;
+    border-bottom: 1/@base solid #C2C2C2;
+    background-color: #F3F3F3;
+
+    line-height: 70 / @base;
+    padding-left: 20/@base;
+
+    span {
+        font-size: 24 / @base;
+        color: #742801;
+        font-weight: 700;
+    }
+}
+
+.mmm_saleNum {
+    background-color: #fff;
+
+    ul {
+        li {
+            // height: 255/@base;
+            border-bottom: 2px solid @border;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                padding-top: 33 / @base;
+
+                .pic_left {
+                    width: 235/@base;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 255 / @base;
+
+                    img {
+                        width: 200/@base;
+                        display: inline-block;
+                    }
+                }
+
+                .desc_right {
+                    height: 100%;
+                    overflow: hidden;
+
+                    p {
+                        font-size: 26 / @base;
+                        margin-right: 10 / @base;
+
+                        &.red {
+                            height: 100/@base;
+                            color: #E81F00;
+                            line-height: 100 / @base;
+                        }
+
+                        &.gray {
+                            color: #A5A4A2;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.mmm_saleCom {
+
+    height: 70 / @base;
+    border-top: 1/@base solid #C2C2C2;
+    border-bottom: 1/@base solid #C2C2C2;
+    background-color: #F3F3F3;
+
+    line-height: 70 / @base;
+    padding-left: 20/@base;
+
+    span {
+        font-size: 24 / @base;
+        color: #742801;
+        font-weight: 700;
+    }
+
+}
+
+.mmm_comment {
+    background-color: #fff;
+
+    ul {
+        background-color: #fff;
+
+        li {
+            // height: 255/@base;
+            border-bottom: 2px solid @border;
+            padding: 10 / @base;
+
+            a {
+                width: 100%;
+                display: block;
+                height: 230/@base;
+                padding-top: 33 / @base;
+
+                .pic_left {
+                    width: 200/@base;
+                    height: 190/@base;
+                    text-align: center;
+                    line-height: 255 / @base;
+                    background-color: pink;
+
+                    img {
+                        width: 80/@base;
+                        height: 80 / @base;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+
+                .text {
+                    height: 100%;
+                    overflow: hidden;
+
+                    p {
+                        font-size: 26 / @base;
+                        margin-right: 10 / @base;
+                    }
+                }
+            }
+        }
+
+        .comContent {
+            // display: none;
+            border: 1/@base solid #E9E9E9;
+            // height: 300 / @base;
+            background-color: #F8F8F8;
+            position: relative;
+            margin: 0 20/@base;
+            padding: 25 / @base 20 / @base;
+
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-left: 24 / @base solid transparent;
+                border-right: 24 / @base solid transparent;
+                border-bottom: 24 / @base solid #E9E9E9;
+                position: absolute;
+                left: 40 / @base;
+                top: -24/@base;
+
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-left: 20 / @base solid transparent;
+                    border-right: 20 / @base solid transparent;
+                    border-bottom: 20 / @base solid #F8F8F8;
+                    position: absolute;
+                    left: -20 / @base;
+                    top: 4/@base;
+                }
+            }
+
+            p {
+                span {
+                    font-size: 20 / @base;
+                    color: #8D8280;
+                }
+
+            }
+
+            &:nth-child(2) {
+                font-size: 22 /@base;
+            }
+
+
+        }
+    }
+
+
+}

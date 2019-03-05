@@ -1,0 +1,187 @@
+.mmm_header {
+  background-color: #F4483E;
+}
+.mmm_header .header_logo span {
+  line-height: 1.16rem;
+  color: #fff;
+  padding-left: 2.90666667rem;
+  font-size: 0.53333333rem;
+}
+.mmm_banner {
+  height: 1rem;
+  background-color: #fff;
+  margin-bottom: 0.13333333rem;
+}
+.mmm_banner #wrapper {
+  overflow: hidden;
+}
+.mmm_banner #wrapper ul {
+  width: 18.13333333rem;
+}
+.mmm_banner #wrapper ul li {
+  float: left;
+  height: 1rem;
+}
+.mmm_banner #wrapper ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.26666667rem;
+  font-size: 0.34666667rem;
+  text-align: center;
+  line-height: 0.93333333rem;
+}
+.mmm_banner #wrapper ul li a span {
+  display: block;
+  position: relative;
+}
+.mmm_banner #wrapper ul li a span.current::before {
+  content: "";
+  width: 100%;
+  height: 0.04rem;
+  background-color: #D90000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+.mmm_productList ul li {
+  border-bottom: 2px solid #e7e7e7;
+  background-color: #fff;
+  margin-bottom: 0.13333333rem;
+  padding-top: 0.44rem;
+  padding-bottom: 0.30666667rem;
+  font-size: 0.34666667rem;
+  color: #D90000;
+  padding-right: 0.13333333rem;
+}
+.mmm_productList ul li p {
+  color: #000;
+}
+.mmm_productList ul li img {
+  width: 3.46666667rem;
+  height: 3.33333333rem;
+  text-align: center;
+  background-color: pink;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin-right: 0.13333333rem;
+}
+.mmm_productList ul li del {
+  margin-left: 0.33333333rem;
+  color: #A59E9B;
+  font-size: 0.24rem;
+}
+.mmm_productList ul li i {
+  font-style: normal;
+}
+.mmm_productList ul li span {
+  color: #000;
+}
+.mmm_productList ul li em {
+  padding-top: 0.33333333rem;
+  font-style: normal;
+  display: inline-block;
+}
+.mmm_productList ul li .bar {
+  overflow: hidden;
+  margin-top: 0.30666667rem;
+  height: 0.6rem;
+}
+.mmm_productList ul li .bar a {
+  width: 0;
+  height: 0;
+  border: none;
+}
+.mmm_productList ul li .bar i {
+  width: 2.2rem;
+  height: 0.37333333rem;
+  border: 0.04rem solid #fc262b;
+  border-radius: 0.26666667rem;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  background-color: #FFB7B7;
+  text-align: center;
+}
+.mmm_productList ul li .bar i em {
+  content: "";
+  width: 0.8rem;
+  height: 100%;
+  background-color: #FC262B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0.13333333rem 0.13333333rem 0;
+}
+.mmm_productList ul li .bar i span {
+  color: #fff;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  font-size: 0.21333333rem;
+}
+.mmm_productList ul li .bar b {
+  float: left;
+  margin-left: 0.26666667rem;
+  font-weight: normal;
+}
+.mmm_productList ul li a {
+  width: 2.93333333rem;
+  height: 0.66666667rem;
+  border: 0.04rem dotted #f4483e;
+  display: block;
+  float: left;
+  font-size: 0.29333333rem;
+  line-height: 0.66666667rem;
+  color: #F4483E;
+  text-align: center;
+  margin-bottom: 0.33333333rem;
+}
+.mmm_productList ul li a:last-child {
+  width: 1.49333333rem;
+  height: 0.73333333rem;
+  background-color: #FF5E5D;
+  border: none;
+  border-radius: 0.13333333rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.73333333rem;
+  display: block;
+  float: right;
+}
+.mmm_productList ul .more {
+  height: 1.10666667rem;
+  border: 1px solid #CACACA;
+  margin: 0.26666667rem;
+  line-height: 1.10666667rem;
+  border-radius: 0.13333333rem;
+  overflow: hidden;
+}
+.mmm_productList ul .more a {
+  font-size: 0.34666667rem;
+  color: #000;
+  background-color: #F8F8F8;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.mmm_top {
+  position: fixed;
+  bottom: 0.13333333rem;
+  right: 0.13333333rem;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  background-color: #7F7F7F;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.06666667rem;
+}
+.mmm_top i {
+  color: #999;
+  font-size: 0.53333333rem;
+}

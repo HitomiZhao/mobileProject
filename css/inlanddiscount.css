@@ -1,0 +1,40 @@
+.header_logo span {
+  padding-left: 3.46666667rem;
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.mmm_product {
+  background-color: #fff;
+}
+.mmm_product ul li {
+  width: 50%;
+  height: 7.73333333rem;
+  float: left;
+  padding: 0.53333333rem 0.26666667rem 0rem 0.53333333rem;
+  border-bottom: 0.01333333rem solid #eeeeee;
+  border-right: 0.01333333rem solid #eeeeee;
+}
+.mmm_product ul li:nth-child(2n) {
+  border-right: none;
+}
+.mmm_product ul li a img {
+  height: 4rem;
+  background-color: pink;
+}
+.mmm_product ul li a p {
+  font-size: 0.34666667rem;
+  color: #000;
+  font-weight: 700;
+}
+.mmm_product ul li a p:nth-child(3) {
+  color: #FF841D;
+  font-size: 0.26666667rem;
+  font-weight: normal;
+  height: 0.66666667rem;
+  margin-top: 0.26666667rem;
+}
+.mmm_product ul li a p:last-child {
+  color: #9793A0;
+  font-size: 0.24rem;
+  font-weight: normal;
+}

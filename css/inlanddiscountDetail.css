@@ -1,0 +1,148 @@
+.header_logo i {
+  font-size: 0.66666667rem;
+  color: #fff;
+  padding-left: 0.53333333rem;
+}
+.header_logo span {
+  padding-left: 2.66666667rem;
+  color: #fff;
+}
+.productDetail {
+  padding: 0.53333333rem 0.26666667rem;
+  background-color: #fff;
+}
+.productDetail h2 {
+  font-size: 0.4rem;
+  color: #2F3236;
+}
+.productDetail .money {
+  height: 1rem;
+  color: #FF4900;
+  font-size: 0.37333333rem;
+  margin-top: 0.13333333rem;
+}
+.productDetail .pic {
+  width: 2.66666667rem;
+  background-color: blue;
+  float: right;
+  overflow: hidden;
+  margin: 0.16rem auto 0.13333333rem;
+}
+.productDetail .author {
+  height: 0.93333333rem;
+  color: #666;
+  font-size: 0.32rem;
+}
+.productDetail .txt {
+  font-size: 0.37333333rem;
+  color: #574A44;
+  margin-bottom: 0.4rem;
+}
+.productDetail .area {
+  width: 100%;
+}
+.productDetail .area ul {
+  width: 3.73333333rem;
+  margin: 0 auto;
+  padding: 0 0.33333333rem;
+  box-shadow: 0 0 0.13333333rem #d8d8d8;
+  margin-top: 0.8rem;
+  padding-bottom: 0.26666667rem;
+}
+.productDetail .area ul li {
+  height: 0.53333333rem;
+  border-bottom: 1px dashed #ccc;
+  font-size: 0.29333333rem;
+  line-height: 0.53333333rem;
+  padding: 0px 0.26666667rem;
+}
+.productDetail .area ul li a {
+  text-align: center;
+}
+.productDetail .area ul li a span {
+  color: #000;
+  font-weight: 700;
+}
+.productDetail .area ul li a span strong {
+  float: right;
+  color: #F17418;
+}
+.mmm_buy {
+  padding: 0 0.53333333rem 1.2rem;
+  background-color: #fff;
+}
+.mmm_buy a {
+  color: #fff;
+  text-align: center;
+  width: 8.90666667rem;
+  height: 100%;
+  display: block;
+  background-color: #ff841d;
+  line-height: 0.8rem;
+  border-radius: 0.13333333rem;
+  font-size: 0.34666667rem;
+}
+.mmm_comment {
+  background-color: #fff;
+  padding: 0.26666667rem;
+  font-size: 0.32rem;
+  padding-bottom: 1.06666667rem;
+}
+.mmm_comment .form {
+  margin: 0.4rem 0;
+  border: 1px solid #E6E3E1;
+  overflow: hidden;
+}
+.mmm_comment .form textarea {
+  width: 100%;
+  height: 100%;
+}
+.mmm_comment .form .tjdp {
+  float: right;
+  width: 2.66666667rem;
+  height: 1.01333333rem;
+  color: #fff;
+  background-color: #FF841D;
+  border: none;
+  border: 1px solid #FF6B00;
+}
+.mmm_comment .list {
+  margin-top: 0.73333333rem;
+}
+.mmm_comment .list ul li {
+  margin-top: 0.4rem;
+}
+.mmm_comment .list ul li .userimg {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  float: left;
+}
+.mmm_comment .list ul li .userimg img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  border-radius: 50%;
+  float: left;
+  display: inline-block;
+}
+.mmm_comment .list ul li .con {
+  padding-left: 2.13333333rem;
+}
+.mmm_comment .list ul li .con .name .username {
+  float: left;
+  color: #3A8ABC;
+}
+.mmm_comment .list ul li .con .name .time {
+  float: right;
+  color: #827E89;
+}
+.mmm_comment .list ul li .con .content {
+  color: #48443E;
+  margin-top: -0.53333333rem;
+}
+.mmm_comment .list ul li .con .content img {
+  width: 0.29333333rem;
+  height: 0.29333333rem;
+}
+.mmm_footer {
+  margin-top: 0;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/categoryList.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <img src="images/header_logo.png" alt="">
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- ---------------------------------------search -->
+        <div class="mmm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+        <!-- ---------------------------------------link -->
+        <div class="mmm_link">
+            <a href="index.html">首页></a>
+            <a href="category.html">全部分类></a>
+            <a href="#" class="productName">电视></a>
+            <button class="fr">筛选</button>
+        </div>
+
+        <!-- ---------------------------------------productList -->
+        <div class="mmm_productList">
+                <ul>
+                    <!-- 挖个坑 -->
+                    <!-- <li data-id="{{v.productId}}">
+                                <a href="#" class="clearfix">
+                                    <div class="pic_left fl"></div>
+                                    <div class="desc_right">
+                                        <p>移动端凑单品:海天味生抽 1.28L</p>
+                                        <p class="red">&yen;1999.00</p>
+                                        <p class="gray fl">报价(6)</p>
+                                        <p class="gray fl">评论(2286)</p>
+                                    </div>
+                                </a>
+                            </li> -->
+                </ul>
+       
+            <div class="pagination">
+                <div class="prev fl">
+                    <button>上一页</button>
+                </div>
+                <div class="middle fl">
+                    <select name="" id="selected">
+                        <!-- <option value="1">1/3</option>
+                        <option value="1">2/3</option> -->
+                    </select>
+                </div>
+                <div class="next fr">
+                    <button>下一页</button>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 渲染商品页的数据 -->
+    <script type="text/html" id="recommendTpl">
+        {{each result v i}}
+        <li data-id="{{v.productId}}">
+            <a href="categoryDetail.html?{{v.brandName}}={{v.productId}}" class="clearfix" >
+                <div class="pic_left fl">{{@v.productImg}}</div>
+                <div class="desc_right">
+                    <p>{{v.productName}}L</p>
+                    <p class="red">{{v.productPrice}}</p>
+                    <p class="gray fl">{{v.productQuote}}&nbsp;&nbsp;{{v.productCom}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/categotyList.js"></script>
+    <script src="lib/IScroll/iscroll.js"></script>
+</body>
+
+</html>

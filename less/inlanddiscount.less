@@ -1,0 +1,61 @@
+@body_bgc : #F1F1F1;
+@bgc : #FF841D;
+@border : #E7E7E7;
+@design : 750;
+@base : 75rem;
+
+.header_logo {
+    span {
+        padding-left: 260 / @base;
+        color: #fff;
+        font-size: 40 / @base;
+    }
+}
+
+.mmm_product {
+    background-color: #fff;
+
+    ul {
+        li {
+            width: 50%;
+            height: 580/@base;
+            float: left;
+            padding: 40 / @base 20 / @base 0/@base 40 /@base;
+            border-bottom: 1/@base solid #eee;
+            border-right: 1/@base solid #eee;
+
+            &:nth-child(2n) {
+                border-right: none;
+            }
+
+            a {
+                img {
+                    height: 300/@base;
+                    background-color: pink;
+                }
+
+                p {
+                    font-size: 26 / @base;
+                    color: #000;
+                    font-weight: 700;
+
+                    &:nth-child(3) {
+                        color: #FF841D;
+                        font-size: 20 / @base;
+                        font-weight: normal;
+                        height: 50/@base;
+                        margin-top: 20 / @base;
+                    }
+
+                    &:last-child {
+                        color: #9793A0;
+                        font-size: 18/@base;
+                        font-weight: normal;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

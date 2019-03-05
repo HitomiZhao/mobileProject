@@ -1,0 +1,23 @@
+.mmm_nav {
+  height: 0.90666667rem;
+  border-top: 0.01333333rem solid #c2c2c2;
+  border-bottom: 0.01333333rem solid #c2c2c2;
+  padding-left: 0.2rem;
+  font-size: 0.29333333rem;
+  line-height: 0.90666667rem;
+  background-image: linear-gradient(#fafafa 0%, #f2f2f2 100%);
+}
+.mmm_brandTop {
+  background-color: #fff;
+  height: 1.6rem;
+  padding: 0.26666667rem 0.13333333rem;
+}
+.mmm_brandTop .hotTop {
+  height: 0.97333333rem;
+  border: 0.01333333rem solid #c2c2c2;
+  background-color: #EEEEEE;
+  padding-left: 0.26666667rem;
+  line-height: 0.97333333rem;
+  font-size: 0.42666667rem;
+  color: #742801;
+}

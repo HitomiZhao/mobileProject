@@ -1,0 +1,61 @@
+.mmm_header {
+  background-color: #F4483E;
+}
+.mmm_header .header_logo i {
+  font-size: 0.66666667rem;
+  color: #fff;
+  padding-left: 0.53333333rem;
+}
+.mmm_header .header_logo span {
+  padding-left: 2.66666667rem;
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.mmm_tips {
+  height: 0.8rem;
+  width: 100%;
+  background-color: #fff;
+  color: #99979A;
+  font-size: 0.26666667rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.mmm_productList {
+  background-color: #fff;
+}
+.mmm_productList ul li {
+  border-bottom: 2px solid #e7e7e7;
+  padding-top: 0.4rem;
+}
+.mmm_productList ul li a .pic_left {
+  width: 3.13333333rem;
+  text-align: center;
+  line-height: 3.4rem;
+}
+.mmm_productList ul li a .pic_left img {
+  width: 2.86666667rem;
+  display: inline-block;
+}
+.mmm_productList ul li a .desc_right {
+  overflow: hidden;
+}
+.mmm_productList ul li a .desc_right p {
+  font-size: 0.37333333rem;
+}
+.mmm_productList ul li a .desc_right p.red {
+  height: 0.90666667rem;
+  margin-bottom: 0.26666667rem;
+}
+.mmm_productList ul li a .desc_right p.comment {
+  padding-right: 0.13333333rem;
+  color: #A5A4A2;
+  color: #ff841d;
+  font-size: 0.29333333rem;
+}
+.mmm_footer {
+  margin-top: 0;
+}
+.modal-body {
+  height: 3.73333333rem;
+  overflow: scroll;
+}

@@ -1,0 +1,92 @@
+@body_bgc : #F1F1F1;
+@bgc : #FF841D;
+@border : #E7E7E7;
+@design : 750;
+@base : 75rem;
+
+.mmm_header {
+    background-color: #F4483E;
+
+    .header_logo {
+        i {
+            font-size: 50 / @base;
+            color: #fff;
+            padding-left: 40 / @base;
+        }
+
+        span {
+            padding-left: 200 / @base;
+            color: #fff;
+            font-size: 40 / @base;
+        }
+    }
+}
+
+.mmm_tips {
+    height: 60/@base;
+    width: 100%;
+    background-color: #fff;
+    color: #99979A;
+    font-size: 20 / @base;
+    text-align: center;
+    line-height: 60 / @base;
+}
+
+.mmm_productList {
+    background-color: #fff;
+
+    ul {
+        li {
+            border-bottom: 2px solid @border;
+            padding-top: 30 / @base;
+
+            a {
+
+                .pic_left {
+                    width: 235/@base;
+                    text-align: center;
+                    line-height: 255 / @base;
+
+                    img {
+                        width: 215/@base;
+                        display: inline-block;
+                    }
+                }
+
+                .desc_right {
+                    overflow: hidden;
+
+                    p {
+                        font-size: 28 / @base;
+
+                        &.red {
+                            height: 68/@base;
+                            margin-bottom: 20 / @base;
+                        }
+
+                        &.comment {
+                            padding-right: 10 / @base;
+                            color: #A5A4A2;
+                            color: @bgc;
+                            font-size: 22/ @base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mmm_footer {
+    margin-top: 0;
+}
+
+.modal-body {
+    // width: 172/@base;
+    height: 280 / @base;
+    overflow: scroll;
+
+    // img {
+    //     float: left;
+    // }
+}

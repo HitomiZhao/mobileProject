@@ -1,0 +1,63 @@
+.mmm_link {
+  width: 100%;
+  height: 0.93333333rem;
+  background-color: #F6F6F6;
+  border-top: 0.01333333rem solid #c9c9c9;
+  border-bottom: 0.01333333rem solid #c9c9c9;
+  padding-left: 0.2rem;
+  font-size: 0.33333333rem;
+  padding-right: 0.2rem;
+  background-image: linear-gradient(#fcfcfc 0%, #efefef 100%);
+}
+.mmm_link a {
+  line-height: 0.93333333rem;
+}
+.mmm_link button {
+  margin-top: 0.13333333rem;
+  width: 1.65333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  display: inline-block;
+  border: none;
+  border-radius: 0.13333333rem;
+  font-size: 0.29333333rem;
+  box-shadow: 0.02666667rem 0.02666667rem 0.02666667rem #cccccc;
+}
+.mmm_productList {
+  background-color: #fff;
+}
+.mmm_productList ul li {
+  border-bottom: 2px solid #e7e7e7;
+}
+.mmm_productList ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 0.44rem;
+}
+.mmm_productList ul li a .pic_left {
+  width: 3.13333333rem;
+  height: 100%;
+  text-align: center;
+  line-height: 3.4rem;
+}
+.mmm_productList ul li a .pic_left img {
+  width: 2.66666667rem;
+  display: inline-block;
+}
+.mmm_productList ul li a .desc_right {
+  height: 100%;
+  overflow: hidden;
+}
+.mmm_productList ul li a .desc_right p {
+  font-size: 0.34666667rem;
+  margin-right: 0.13333333rem;
+}
+.mmm_productList ul li a .desc_right p.red {
+  height: 1.33333333rem;
+  color: #E81F00;
+  line-height: 1.33333333rem;
+}
+.mmm_productList ul li a .desc_right p.gray {
+  color: #A5A4A2;
+}

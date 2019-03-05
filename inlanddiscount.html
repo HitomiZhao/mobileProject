@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣列表</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/inlanddiscount.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <span>国内折扣</span>
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- ---------------------------------------product -->
+        <div class="mmm_product">
+            <ul class="clearfix">
+                <!-- <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <p>西域美农好的和律师费供货商</p>
+                        <p>19.8元(5件99元)</p>
+                        <p>京东商城 &nbsp;|&nbsp;10-22&nbsp;13:28</p>
+                    </a>
+                </li> -->
+
+            </ul>
+        </div>
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="proTpl">
+        {{each result v i}}
+        <li >
+            <a href="inlanddiscountDetail.html?{{v.productName}}={{v.productId}}">
+                {{@v.productImg}}
+                <p>{{v.productName}}</p>
+                <p>{{v.productPrice}}</p>
+                <p>{{v.productFrom}} &nbsp;|&nbsp;{{v.productTime}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+</body>
+
+</html>

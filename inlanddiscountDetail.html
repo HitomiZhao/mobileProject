@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣商品详情页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+    <link rel="stylesheet" href="css/inlanddiscountDetail.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <a href="javaScript:history.go(-1);"><i class="fa fa-angle-left"></i></a>
+                <span>国内折扣</span>
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- ---------------------------------------productDetail -->
+        <div class="productDetail">
+            <!-- <h2>移动端凑单商品:海天鲜味生抽1.28升</h2>
+            <p class="money">19.8元(5件99元)</p>
+            <p class="author">京东商城 小编烟火</p>
+            <div class="desc">
+                <div class="text clearfix">
+                    <div class="pic fr"><img src="" alt=""></div>
+                    <p class="txt">货款款后就开始规划反射光栅覆盖的方式发给还老是开发规划是开发规划海天</p>
+                    <p class="txt">阖家安康发的哈发空间都干哈看过阖家安康发的哈发空间都干哈看过阖家安康发的哈发空间都干哈看过阖家安康发的哈发空间都干哈看过</p>
+                    <p><img src="images/productctrl.jpg" alt=""></p>
+                    <div class="area">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>北京</span>
+                                    <span class="orange fr">有货</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <img src="" alt=""> -->
+        </div>
+
+        <!-- ---------------------------------------buy -->
+        <div class="mmm_buy">
+            <a href="#">前往购买</a>
+        </div>
+
+        <!-- ---------------------------------------mmm_comment -->
+        <div class="mmm_comment">
+            <img src="images/mmbweixin2.png" alt="">
+        </div>
+
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="inlandTpl">
+        {{each result v i}}
+        <h2>{{v.productName}}</h2>
+        <p class="money">{{v.productPrice}}</p>
+        <p class="author">{{v.productFrom}}&nbsp;{{v.productTime}}&nbsp;{{v.productTips}}</p>
+        <div class="desc">
+            <div class="text clearfix">
+                <div class="pic fr">{{@v.productImg}}</div>
+                <p class="txt">{{v.productInfo2}}</p>
+                <p class="txt">{{v.productInfo}}</p>
+                <p>{{@v.productImg}}</p>
+                <!-- <div class="area">{{@v.productCity}}</div> -->
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/inlanddiscountDetail.js"></script>
+</body>
+
+</html>

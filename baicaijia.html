@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白菜价--淘宝内部券</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <span>白菜价--淘宝内部券</span>
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- ---------------------------------------nav -->
+        <div class="mmm_banner">
+            <div id="wrapper">
+                <ul class="clearfix">
+                    <!-- 挖个坑 -->
+                    <!-- <li><a href="#" class="current">热销</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- ---------------------------------------productList -->
+        <div class="mmm_productList">
+            <ul>
+                <!-- 挖个坑 -->
+                <!-- data-id="{{v.productId}}" -->
+                <!-- <li>
+                    <a href="#" class="clearfix">
+                        <div class="pic_left fl"></div>
+                        <div class="desc_right">
+                            <div class="txt">我啊的好尬快乐嘎好发的规划反射光栅嘎好发的规划反射光栅</div>
+                            <div class="price">198元</div>
+                            <div class="progress">进度条</div>
+                            <div class="link">
+                                <div class="discount fl">点此领10元优惠券</div>
+                                <button class="fr">下单链接</button>
+                            </div>
+                        </div>
+
+                    </a>
+                </li> -->
+            </ul>
+
+        </div>
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="mmm_top">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <!-- 导航渲染 -->
+    <script type="text/html" id="navTpl">
+        {{each result v i}}
+            <li data-id="{{v.titleId}}"><a href="#"><span>{{v.title}}</span></a></li>
+        {{/each}}
+    </script>
+
+
+    <!-- 折扣列表渲染 -->
+    <script type="text/html" id="listTpl">
+        {{each result v i}}
+        <li class="clearfix">
+                    {{@v.productImg}}
+                    <p>{{@v.productName}}</p>
+                    {{@v.productPrice}}
+                    {{@v.productCouponRemain}}
+                    {{@v.productCoupon}}
+                    <p class="link">{{@v.productHref}}</p>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/baicaijia.js"></script>
+    <script src="lib/IScroll/iscroll.js"></script>
+</body>
+
+</html>

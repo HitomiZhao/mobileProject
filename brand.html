@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品牌排行</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <img src="images/header_logo.png" alt="">
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- ---------------------------------------search -->
+        <div class="mmm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+        <!-- ---------------------------------------nav -->
+        <div class="mmm_nav">
+            <a href="index.html">首页></a>
+            <a href="#">全部分类></a>
+        </div>
+
+        <!-- ---------------------------------------brandTop -->
+        <div class="mmm_brandTop"><span class="title"></span><span>哪个好</span></div>
+
+
+        <!-- ---------------------------------------categoryList -->
+        <div class="categoryList">
+            <ul class="clearfix">
+                <!-- <li>
+                    <a href="#" class="first">
+                        <div class="number fl">
+                            <span>1</span>
+                        </div>
+                        <div class="txt fl">
+                            <p>大家电</p>
+                            <p>30天全网销售242408件</p>
+                        </div>
+                        <div class="icon fr">
+                            <i class="fa fa-angle-right fr"></i>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- ---------------------------------------sale -->
+        <div class="mmm_sale">
+            <span class="title"></span><span>销量排行</span>
+        </div>
+
+        <!-- ----------------------------------------saleNum -->
+        <div class="mmm_saleNum">
+            <ul class="clearfix">
+                <!-- 挖个坑 -->
+                <!-- <li data-id="{{v.productId}}">
+                    <a href="#" class="clearfix">
+                        <div class="pic_left fl">
+                            <img src="" alt="">
+                        </div>
+                        <div class="desc_right">
+                            <p>移动端凑单品:海天味生抽 1.28L</p>
+                            <p class="red">&yen;1999.00</p>
+                            <p class="gray fl">报价(6)</p>
+                            <p class="gray fl">评论(2286)</p>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+
+        </div>
+
+        <!-- ---------------------------------------saleCom -->
+        <div class="mmm_saleCom">
+            <span class="title"></span><span>最新评论</span>
+        </div>
+
+        <!-- ----------------------------------------comment -->
+        <div class="mmm_comment">
+            <div class="detail">
+                <ul class="clearfix">
+                    <!-- <li>
+                        <a href="#" class="clearfix">
+                            <div class="pic_left fl">
+                                <img src="" alt="">
+                            </div>
+                            <div class="desc_right">
+                                <p>移动端凑单品:海天味生抽 1.28L</p>
+                            </div>
+                        </a>
+                        <div class="comContent">
+                            <div class="triangle"></div>
+                            <p class="clearfix">
+                                <span class="fl">name</span>
+                                <span class="fr">time</span>
+                            </p>
+                            <p>浮动哈过或啦过或卡付过或啦或扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩扩评论发布自:京东商城</p>
+                        </div>
+                    </li> -->
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 十大排行渲染 -->
+    <script type="text/html" id="brandTpl">
+
+        {{each result v i}}
+                <li data-id="{{v.brandId}}">
+                    <a href="#" class="first">
+                        {{if i === 0}}
+                            <div class="number fl">
+                                <span class="red">{{i+1}}</span>  
+                            </div>
+                        {{else if i === 1}}
+                            <div class="number fl">
+                                <span class="orange">{{i+1}}</span>  
+                            </div>
+                        {{else if i === 2}}
+                            <div class="number fl">
+                                <span class="lime">{{i+1}}</span>  
+                            </div>
+                        {{else}}
+                            <div class="number fl">
+                                <span>{{i+1}}</span>  
+                            </div>
+                        
+                        {{/if}}
+                        <div class="txt fl">
+                            <p>{{v.brandName}}</p>
+                            <p>{{v.brandInfo}}</p>
+                        </div>
+                        <div class="icon fr">
+                            <i class="fa fa-angle-right fr"></i>
+                        </div>
+                    </a>
+                </li>           
+
+        {{/each}}
+    </script>
+
+    <!-- 十大排行分类商品渲染 -->
+    <script type="text/html" id="saleTpl">
+        {{each result v i}}
+                <li data-id="{{v.productId}}">
+                        <a href="#" class="clearfix">
+                            <div class="pic_left fl">{{@v.productImg}}</div>
+                            <div class="desc_right">
+                                <p class="myName">{{v.productName}}</p>
+                                <p class="red">{{v.productPrice}}</p>
+                                <p class="gray fl">{{v.productQuote}}</p>
+                                <p class="gray fl">{{v.productCom}}</p>
+                            </div>
+                        </a>
+                </li>
+        {{/each}}
+    </script>
+
+    <!-- 评论渲染 -->
+    <script type="text/html" id="commentTpl">
+        {{each result v i}}
+            <li class="clearfix">
+                <a href="#" class="clearfix">
+                    <div class="pic_left fl">
+                        <img src="images/categorylist.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>围殴方面的工商局代付款靖国神社</p>
+                    </div>
+                </a>
+                <div class="comContent">
+                    <div class="triangle"></div>
+                    <p class="clearfix">
+                        <span class="fl">{{v.comName}}</span>
+                        <span class="fr">{{v.comTime}}</span>
+                    </p>
+                    <p>{{v.comContent}}评论发布自:京东商城</p>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/brand.js"></script>
+</body>
+
+</html>

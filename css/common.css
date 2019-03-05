@@ -1,0 +1,377 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.mmm_header {
+  width: 100%;
+  height: 1.30666667rem;
+  background-color: #ff841d;
+  line-height: 1.30666667rem;
+  overflow: hidden;
+}
+.mmm_header .header_logo img {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+  margin-left: 0.4rem;
+  margin-top: 0.32rem;
+}
+.mmm_header .header_app img {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+  margin-top: 0.2rem;
+  margin-right: 0.13333333rem;
+}
+.mmm_search {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: #fff;
+  padding-left: 0.24rem;
+  line-height: 1.33333333rem;
+}
+.mmm_search input {
+  width: 7.6rem;
+  height: 0.8rem;
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  font-size: 0.32rem;
+  padding-left: 0.50666667rem;
+  color: #676D72;
+  line-height: 0.8rem;
+}
+.mmm_search button {
+  width: 1.70666667rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  background-color: #ff841d;
+  color: #fff;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 0.32rem;
+}
+.mmm_footer {
+  margin-top: 0.66666667rem;
+  height: 0.86666667rem;
+  border: 1px solid #CACACA;
+}
+.mmm_footer ul {
+  height: 100%;
+}
+.mmm_footer ul li {
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  border-right: 1px solid #CACACA;
+  line-height: 0.86666667rem;
+  text-align: center;
+}
+.mmm_footer ul li a {
+  width: 100%;
+  display: block;
+  font-size: 0.34666667rem;
+}
+.mmm_footer ul li a img {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+}
+.mmm_footer ul li:last-child {
+  border-right: none;
+}
+.mmm_footer .mobile_app {
+  height: 1.65333333rem;
+  font-size: 0.34666667rem;
+  text-align: center;
+  padding-top: 0.46666667rem;
+  margin-top: 0.02666667rem;
+  background-color: #EFEFEF;
+}
+.mmm_footer .mobile_app a {
+  color: #FF040B;
+}
+.mmm_footer .mobile_app span:nth-child(3) {
+  color: #514E4A;
+}
+.mmm_footer .mobile_app p {
+  color: #514E4A;
+  height: 0.4rem;
+}
+.pagination {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #fff;
+  line-height: 1.2rem;
+}
+.pagination div {
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+}
+.pagination div select {
+  width: 2.08rem;
+  height: 0.88rem;
+  text-align: center;
+  border: none;
+  border: 1px solid #BABABA;
+  outline: none;
+  font-size: 0.34666667rem;
+}
+.pagination div button {
+  width: 2.13333333rem;
+  height: 0.88rem;
+  border: none;
+  border-radius: 0.13333333rem;
+  font-size: 0.32rem;
+  line-height: 0.88rem;
+  display: inline-block;
+}
+#myModal {
+  width: 5.33333333rem;
+  height: 5.33333333rem;
+  margin: 2.66666667rem auto;
+}
+#myModal .swiper-button-next {
+  right: 0;
+  z-index: 999;
+  color: #fff;
+}
+#myModal .swiper-button-prev {
+  left: 0;
+  z-index: 999;
+  color: #fff;
+}

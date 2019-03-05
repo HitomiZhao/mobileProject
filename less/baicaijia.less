@@ -1,0 +1,246 @@
+@body_bgc : #F1F1F1;
+@bgc : #FF841D;
+@border : #E7E7E7;
+@design : 750;
+@base : 75rem;
+
+.mmm_header {
+    background-color: #F4483E;
+
+    .header_logo {
+        span {
+            line-height: 87 / @base;
+            color: #fff;
+            padding-left: 218 / @base;
+            font-size: 40 / @base;
+        }
+    }
+}
+
+.mmm_banner {
+    height: 75/@base;
+    background-color: #fff;
+    margin-bottom: 10 / @base;
+
+    #wrapper {
+        overflow: hidden;
+
+        ul {
+            // overflow: hidden;
+            width: 1360/@base;
+
+            li {
+                float: left;
+                height: 75/@base;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 20 / @base;
+                    font-size: 26 / @base;
+                    text-align: center;
+                    line-height: 70 / @base;
+
+                    span {
+                        display: block;
+                        position: relative;
+
+                        &.current {
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                height: 3/@base;
+                                background-color: #D90000;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                display: block;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}
+
+
+
+.mmm_productList {
+
+    ul {
+        li {
+            // height: 300/@base;
+            border-bottom: 2px solid @border;
+            background-color: #fff;
+            margin-bottom: 10 / @base;
+            padding-top: 33 / @base;
+            padding-bottom: 23 / @base;
+            font-size: 26 / @base;
+            color: #D90000;
+            padding-right: 10 / @base;
+
+
+            p {
+                color: #000;
+            }
+
+            img {
+                width: 260/@base;
+                height: 250/@base;
+                text-align: center;
+                background-color: pink;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                margin-right: 10 / @base;
+            }
+
+            del {
+                margin-left: 25 / @base;
+                color: #A59E9B;
+                font-size: 18/@base;
+            }
+
+            i {
+                font-style: normal;
+            }
+
+            span {
+                color: #000;
+            }
+
+            em {
+                padding-top: 25 /@base;
+                font-style: normal;
+                display: inline-block;
+
+            }
+
+            .bar {
+                overflow: hidden;
+                margin-top: 23 / @base;
+                height: 45 / @base;
+                ;
+
+                a {
+                    width: 0;
+                    height: 0;
+                    border: none;
+                }
+
+                i {
+                    width: 165/@base;
+                    height: 28 / @base;
+                    // display: block;
+                    border: 3/@base solid #FC262B;
+                    border-radius: 20 / @base;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                    background-color: #FFB7B7;
+                    text-align: center;
+                    // line-height: 28 / @base;
+
+                    em {
+                        content: "";
+                        width: 60/@base;
+                        height: 100%;
+                        background-color: #FC262B;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 0 10 / @base 10 / @base 0;
+                    }
+
+                    span {
+                        color: #fff;
+                        font-style: normal;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 999;
+                        font-size: 16 / @base;
+                    }
+                }
+
+                b {
+                    float: left;
+                    margin-left: 20 / @base;
+                    font-weight: normal;
+                }
+            }
+
+
+            a {
+                width: 220/@base;
+                height: 50 / @base;
+                border: 3/ @base dotted #F4483E;
+                display: block;
+                float: left;
+                font-size: 22 / @base;
+                line-height: 50 / @base;
+                color: #F4483E;
+                text-align: center;
+                margin-bottom: 25 / @base;
+
+                &:last-child {
+                    width: 112/@base;
+                    height: 55/@base;
+                    background-color: #FF5E5D;
+                    border: none;
+                    border-radius: 10 / @base;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 55 / @base;
+                    display: block;
+                    float: right;
+                    // margin-left: 120 / @base;
+                }
+
+            }
+
+        }
+
+        .more {
+            height: 83 / @base;
+            border: 1px solid #CACACA;
+            margin: 20 /@base;
+            line-height: 83 / @base;
+            border-radius: 10/@base;
+            overflow: hidden;
+
+            a {
+                font-size: 26 / @base;
+                color: #000;
+                background-color: #F8F8F8;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+.mmm_top {
+    position: fixed;
+    bottom: 10 / @base;
+    right: 10 / @base;
+    width: 80 / @base;
+    height: 80 / @base;
+    background-color: #7F7F7F;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80 / @base;
+
+    i {
+        color: #999;
+        font-size: 40 / @base;
+    }
+}

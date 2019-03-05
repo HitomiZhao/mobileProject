@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/categoryDetail.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <img src="images/header_logo.png" alt="">
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- ---------------------------------------search -->
+        <div class="mmm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+        <!-- ---------------------------------------link -->
+        <div class="mmm_link">
+            <a href="index.html">首页></a>
+            <a href="category.html">电视></a>
+            <a href="#" class="name">乐视TV(letv)S50</a>
+            <button class="fr">筛选</button>
+        </div>
+        <!-- ---------------------------------------show -->
+        <div class="mmm_show">
+            <div class="product">
+                <!-- 挖坑 -->
+                <!-- <p>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+                <div class="box"></div> -->
+            </div>
+            <div class="collect">收藏</div>
+            <ul>
+                <li><a href="#">比价购买</a></li>
+                <li><a href="#">产品参数</a></li>
+                <li><a href="#">评价(2322)</a></li>
+            </ul>
+            <div class="mall clearfix">
+                <div class="mall_left fl">
+                    <img src="images/slogo.png" alt=""><span>京东商城</span>
+                </div>
+                <div class="mall_right fr">
+                    <span>&yen;1999.00</span>
+                    <button>去购买</button>
+                </div>
+
+            </div>
+            <div class="tips">
+                <p>*实际价格以各网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------comment -->
+        <div class="mmm_comment">
+            <h4>网友评论</h4>
+            <ul>
+                <!-- 挖坑 -->
+                <!-- <li>
+                    <div class="txt clearfix">
+                        <span class="fl">xxxx</span>
+                        <span class="fr">2016/10/1</span>
+                    </div>
+                    <div class="area clearfix">
+                        <p class="fr">购买自:京东商城</p>
+                    </div>
+                </li> -->
+
+            </ul>
+            <div class="more">
+                <a href="#">查看更多评价</a>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片和商品介绍渲染 -->
+    <script type="text/html" id="detailTpl">
+        {{each result v i}}
+            <p>{{v.productName}}</p>
+            <div class="box">{{@v.productImg}}</div>
+        {{/each}}
+    </script>
+
+    <!-- 评论渲染 -->
+    <script type="text/html" id="commentTpl">
+        {{each result v i}}
+            <li>
+                <div class="txt clearfix">
+                    <span class="fl">{{v.comName}}</span>
+                    <span class="fr">{{v.comTime}}</span>
+                </div>
+                <div class="area clearfix">
+                    <p class="fr">{{v.comFrom}}</p>
+                </div>
+                <div class="content">{{v.comContent}}</div>
+            </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/categoryDetail.js"></script>
+</body>
+
+</html>

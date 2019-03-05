@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------------------------------header -->
+        <div class="mmm_header">
+            <div class="header_logo fl">
+                <img src="images/header_logo.png" alt="">
+            </div>
+            <div class="header_app fr">
+                <img src="images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- ---------------------------------------search -->
+        <div class="mmm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+        <!-- ---------------------------------------categoryList -->
+        <div class="categoryList">
+            <div class="content">
+                <!-- <div class="first">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#" class="first"><span>大家电</span><i class="fa fa-angle-down fr"></i></a>
+                        </li>
+                    </ul>
+                    <ol class="clearfix">
+                        <li>电视</li>
+                    </ol>
+                </div> -->
+            </div>
+        </div>
+        <!-- ----------------------------------------footer -->
+        <div class="mmm_footer">
+            <ul class="clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" class="backTop"> <img src="images/top.jpg" alt=""> 返回顶部</a></li>
+            </ul>
+            <div class="mobile_app">
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价版</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 一级分类 -->
+    <script type="text/html" id="firstTpl">
+        {{each result v i}}
+            <div class="first">
+                <ul class="clearfix">
+                        <li data-id="{{v.titleId}}">
+                            <a href="#" class="first"><span>{{v.title}}</span><i class="fa fa-angle-down fr arrow"></i></a>
+                        </li>
+                </ul>
+                <ol class="clearfix none">
+
+                </ol>
+            </div>
+        {{/each}}
+    </script>
+
+    <!-- 二级分类 -->
+    <script type="text/html" id="secondTpl">
+        {{each result v i}}
+            <li data-id="{{v.categoryId}}" class="olli"><a href="categoryList.html?{{v.category}}={{v.categoryId}}">{{v.category}}</a></li>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>
