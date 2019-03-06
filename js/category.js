@@ -38,11 +38,9 @@ function render(titleid, ol) {
 // 点击控制二级分类与隐藏
 var $content = $(".content");
 // console.log($content);
-$content.on("click", ".arrow", function () {
-    var ol = $(this).parent().parent().parent().siblings();
+$content.on("click", ".first", function () {
+    var ol = $(this).find("ol");
     if (ol.hasClass("none")) {
         ol.toggleClass("block");
     }
 })
-
-
